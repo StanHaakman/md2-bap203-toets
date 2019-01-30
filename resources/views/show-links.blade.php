@@ -5,7 +5,7 @@
 
     <a href="{{ route('create-link') }}">Add link</a>
 
-    <div class="container">
+    <div class="container" style="padding: 20px 50px;">
         <div class="row">
         @foreach ($links as $link)
 
@@ -20,7 +20,7 @@
                     @method('DELETE')
                     @csrf
                     
-                    <button type="submit" class="button">Delete project</button>
+                    <button type="submit" class="btn btn-primary">Delete project</button>
 
                 </form>  
                     </div>
