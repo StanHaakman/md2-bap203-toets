@@ -5,7 +5,7 @@
 
     <a href="{{ route('create-link') }}">Add link</a>
 
-    <div class="container" style="padding: 20px 50px;">
+    <div class="container" style="padding: 50px;">
         <div class="row">
         @foreach ($links as $link)
 
