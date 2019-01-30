@@ -21,3 +21,8 @@ Route::get('/help', function(){
 })->name('help');
 
 // Voeg hier je eigen routes toe
+
+Route::get('/laravel-links', 'LinksController@index')->name('laravel-links');
+Route::get('/link-toevoegen', 'LinksController@createLink')->name('create-link');
+Route::post('/link-opslaan', 'LinksController@storeLink')->name('store-link');
+Route::delete('/link-verwijderen/{id}', 'LinksController@destroyLink')->name('destroy-link');
